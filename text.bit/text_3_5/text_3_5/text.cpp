@@ -75,22 +75,22 @@ char* my_strcpy(char* str, const char* src)
 //strcat模拟实现
 //字符串追加
 
-//char* my_strcat(char* dest, const char* src)
-//{
-//	assert(dest && src);
-//	char* ret = dest;
-//	while (*dest)
-//	{
-//		dest++;
-//	}
-//
-//	while (*dest++ = *src++)
-//	{
-//		;
-//	}
-//
-//	return ret;
-//}
+char* my_strcat(char* dest, const char* src)
+{
+	assert(dest && src);
+	char* ret = dest;
+	while (*dest)
+	{
+		dest++;
+	}
+
+	while (*dest++ = *src++)
+	{
+		;
+	}
+
+	return ret;
+}
 //int main()
 //{
 //	char arr[20] = "hello ";
