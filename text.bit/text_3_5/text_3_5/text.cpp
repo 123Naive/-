@@ -123,53 +123,53 @@ int my_strcmp(const char* str1, const char* str2)
 	return *str1 - *str2;
 }
 
-int main()
-{
-	char arr1[] = "xcv";
-	char arr2[] = "abc";
-	int ret = my_strcmp(arr1, arr2);
-	printf("%d\n", ret);
-
-	return 0;
-
-}
-//
-////strstr模拟实现
-//char* my_strstr(const char* str1, const char* str2)
-//{
-//	assert(str1 && str2);
-//	if (*str2 == '\0')
-//	{
-//		return (char*)str1;
-//	}
-//	const char* s1 = NULL;
-//	const char* s2 = NULL;
-//	const char* p = str1;
-//	while (*p)
-//	{
-//		s1 = p;
-//		s2 = str2;
-//		while (*s1 != '\0' && *s2 !='\0' && *s1 == *s2)
-//		{
-//			s1++;
-//			s2++;
-//		}
-//		if (*s2 == '\0')
-//		{
-//			return (char*)p;
-//		}
-//		p++;
-//	}
-//	return NULL;
-//}
-//
-//
 //int main()
 //{
-//	char arr1[] = "abbbcdef";
-//	char arr2[] = "bbc";
-//	char* ret = my_strstr(arr1, arr2);
-//	printf("%s\n", ret);
+//	char arr1[] = "xcv";
+//	char arr2[] = "abc";
+//	int ret = my_strcmp(arr1, arr2);
+//	printf("%d\n", ret);
 //
 //	return 0;
+//
 //}
+//
+//strstr模拟实现
+char* my_strstr(const char* str1, const char* str2)
+{
+	assert(str1 && str2);
+	if (*str2 == '\0')
+	{
+		return (char*)str1;
+	}
+	const char* s1 = NULL;
+	const char* s2 = NULL;
+	const char* p = str1;
+	while (*p)
+	{
+		s1 = p;
+		s2 = str2;
+		while (*s1 != '\0' && *s2 !='\0' && *s1 == *s2)
+		{
+			s1++;
+			s2++;
+		}
+		if (*s2 == '\0')
+		{
+			return (char*)p;
+		}
+		p++;
+	}
+	return NULL;
+}
+
+
+int main()
+{
+	char arr1[] = "abbbcdef";
+	char arr2[] = "bbc";
+	char* ret = my_strstr(arr1, arr2);
+	printf("%s\n", ret);
+
+	return 0;
+}
