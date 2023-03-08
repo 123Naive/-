@@ -123,16 +123,16 @@ int my_strcmp(const char* str1, const char* str2)
 	return *str1 - *str2;
 }
 
-//int main()
-//{
-//	char arr1[] = "xcv";
-//	char arr2[] = "abc";
-//	int ret = my_strcmp(arr1, arr2);
-//	printf("%d\n", ret);
-//
-//	return 0;
-//
-//}
+int main()
+{
+	char arr1[] = "xcv";
+	char arr2[] = "abc";
+	int ret = my_strcmp(arr1, arr2);
+	printf("%d\n", ret);
+
+	return 0;
+
+}
 //
 //strstrÄ£ÄâÊµÏÖ
 char* my_strstr(const char* str1, const char* str2)
@@ -164,12 +164,12 @@ char* my_strstr(const char* str1, const char* str2)
 }
 
 
-int main()
-{
-	char arr1[] = "abbbcdef";
-	char arr2[] = "bbc";
-	char* ret = my_strstr(arr1, arr2);
-	printf("%s\n", ret);
-
-	return 0;
-}
+//int main()
+//{
+//	char arr1[] = "abbbcdef";
+//	char arr2[] = "bbc";
+//	char* ret = my_strstr(arr1, arr2);
+//	printf("%s\n", ret);
+//
+//	return 0;
+//}
