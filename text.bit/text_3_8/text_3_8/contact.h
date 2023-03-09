@@ -4,7 +4,7 @@
 #include<assert.h>
 #include<string.h>
 
-#define MAX 100
+#define MAX 1000
 #define NAME_MAX 20
 #define SEX_MAX 5
 #define ADDR_MAX 30
